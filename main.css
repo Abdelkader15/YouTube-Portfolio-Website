@@ -1,0 +1,58 @@
+:root {
+  --yt-red: #ff0000;
+  --dark-bg: #0f0f0f;
+  --light-bg: #f8f9fa;
+  --text-dark: #212529;
+  --text-light: #f8f9fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-dark);
+}
+.navbar,
+.footer,
+.dark-section {
+  background-color: var(--dark-bg) !important;
+  color: var(--text-light) !important;
+}
+.hero-section {
+  height: 95vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(imgs/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+  color: white;
+}
+.btn-yt {
+  background-color: var(--yt-red);
+  color: white;
+  font-weight: bold;
+}
+.btn-yt:hover {
+  background-color: #cc0000;
+  color: white;
+}
+.stat-card {
+  border-left: 4px solid var(--yt-red);
+  transition: transform 0.3s;
+}
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+.video-card iframe {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.testimonial-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+.testimonial-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--yt-red);
+}
